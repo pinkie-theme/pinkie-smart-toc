@@ -3,7 +3,7 @@
   "name": "Pinkie Smart TOC for AI Chats",
   "version": "1.0.0",
   "description": "🌸 A gorgeous and smart Table of Contents sidebar with real-time text-highlight saver for ChatGPT, Gemini, Grok, and Claude. Built for developers and AI lovers!",
-  "homepage_url": "https://github.com/justduyen/pinkie-smart-toc",
+  "homepage_url": "https://github.com/pinkie-theme/pinkie-smart-toc",
   "author": "JustDuyen",
   "permissions": [
     "activeTab",
