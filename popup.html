@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pinkie Smart TOC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      width: 290px;
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #fff5f8;
+      color: #4a3e47;
+      margin: 0;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+    
+    /* Header layout */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .logo-container {
+      position: relative;
+    }
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 2px solid #ffc5d9;
+      box-shadow: 0 4px 10px rgba(212, 75, 139, 0.15);
+      display: block;
+    }
+    .logo-sparkle {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      font-size: 14px;
+      animation: pulse 1.5s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.2); }
+    }
+    .title-area h3 {
+      margin: 0;
+      color: #d44b8b;
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+    .title-area p {
+      margin: 2px 0 0 0;
+      font-size: 10px;
+      color: #8a7c87;
+      font-weight: 600;
+    }
+
+    .divider {
+      height: 2px;
+      background-color: #ffeff6;
+      border-radius: 99px;
+      margin: 12px 0;
+    }
+
+    /* Badges list */
+    .badges-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .model-badge {
+      font-size: 9px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 12px;
+      border: 1px solid #ffc5d9;
+      background-color: white;
+      color: #d44b8b;
+      box-shadow: 0 2px 4px rgba(212, 75, 139, 0.03);
+    }
+    
+    .intro-text {
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: center;
+      color: #6a5c67;
+      margin: 0 0 14px 0;
+    }
+
+    /* Instructions box */
+    .features-card {
+      background-color: white;
+      border: 1.5px solid #ffc5d9;
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 4px 12px rgba(212, 75, 139, 0.05);
+      margin-bottom: 16px;
+    }
+    .feature-step {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      font-size: 11px;
+      line-height: 1.4;
+      font-weight: 600;
+      color: #4a3e47;
+    }
+    .feature-step:last-child {
+      margin-bottom: 0;
+    }
+    .step-num {
+      background-color: #ffeff6;
+      color: #d44b8b;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9.5px;
+      font-weight: 800;
+      flex-shrink: 0;
+      border: 1px solid #ffc5d9;
+    }
+
+    /* Action links */
+    .links-area {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-link {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 7px 10px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      box-sizing: border-box;
+    }
+    .btn-github {
+      background-color: #d44b8b;
+      color: white;
+      border: 1px solid #d44b8b;
+      box-shadow: 0 3px 8px rgba(212, 75, 139, 0.25);
+    }
+    .btn-github:hover {
+      background-color: #b73e78;
+      transform: translateY(-1px);
+    }
+    .btn-info {
+      background-color: white;
+      color: #d44b8b;
+      border: 1px solid #ffc5d9;
+    }
+    .btn-info:hover {
+      background-color: #ffeff6;
+      transform: translateY(-1px);
+    }
+
+    .footer {
+      font-size: 9px;
+      color: #a0909c;
+      text-align: center;
+      margin-top: 14px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <img src="icon.png" class="logo" alt="Pinkie Smart TOC Logo" />
+      <span class="logo-sparkle">✨</span>
+    </div>
+    <div class="title-area">
+      <h3>Pinkie Smart TOC</h3>
+      <p>Version 1.0.0 • By JustDuyen</p>
+    </div>
+  </div>
+
+  <div class="badges-container">
+    <span class="model-badge">ChatGPT 💬</span>
+    <span class="model-badge">Gemini ♊</span>
+    <span class="model-badge">Claude 🧠</span>
+    <span class="model-badge">Grok 🤖</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="intro-text">
+    Your sweet, gorgeous Table of Contents sidebar for Web AI Chats! (´｡• ᵕ •｡`) ♡
+  </p>
+
+  <div class="features-card">
+    <div class="feature-step">
+      <span class="step-num">1</span>
+      <span>Click the floating flower 🌸 in the corner to toggle the sidebar TOC.</span>
+    </div>
+    <div class="feature-step">
+      <span class="step-num">2</span>
+      <span>Use search filtering, pin important messages, and swap light/dark themes!</span>
+    </div>
+    <div class="feature-step">
+      <span class="step-num">3</span>
+      <span>Select/Highlight text on the page $\rightarrow$ click "Lưu highlight 🖍️" to save snippets persistently!</span>
+    </div>
+  </div>
+
+  <div class="links-area">
+    <a href="https://github.com/justduyen/pinkie-smart-toc" target="_blank" class="btn-link btn-github">GitHub Repos 🌸</a>
+    <a href="https://github.com/justduyen/justduyen" target="_blank" class="btn-link btn-info">About Me ✨</a>
+  </div>
+
+  <div class="footer">Made with lots of love and sweet coding magic 💕</div>
+  <script src="popup.js"></script>
+</body>
+</html>
